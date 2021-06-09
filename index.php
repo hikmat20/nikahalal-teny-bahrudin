@@ -461,17 +461,6 @@
 										💙💙🤗🤗
 										<br>
 										<hr>
-
-										<script type="text/javascript">
-											const sampul = jQuery(".modalx").data("sampul");
-											jQuery(".modalx").css("background-image", "url(" + sampul + ")");
-											jQuery("body").css("overflow", "hidden");
-											jQuery(".info_button button").on("click", function() {
-												jQuery(".modalx").addClass("removeModals");
-												jQuery("body").css("overflow", "auto");
-												document.getElementById("song").play();
-											});
-										</script>
 								</div>
 							</div>
 						</div>
