@@ -1,12 +1,13 @@
+<?php include_once 'config/connection.php'; ?>
 <!DOCTYPE html>
 <html style="height:100%">
-<!--  -->
 
 <head>
-	<title>Wedding John 1 &mdash; Jane</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<title>Wedding John 1 &mdash; Jane</title>
+	<link rel="stylesheet" href="style.html">
 	<meta property="og:title" content="The Wedding of John & Jane" />
 	<meta property="og:image" content="photos/metabanner.jpg" />
 	<meta property="og:url" content="" />
@@ -16,7 +17,7 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-	<link rel="shortcut icon" href="https://invitationtoyou.com/ity.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="images/icon-nikahalal.ico" type="image/x-icon" />
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com/">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet">
@@ -50,11 +51,11 @@
 
 <body>
 	<audio loop preload="auto" id="myAudio">
-		<source src="medias/kebo-giro.mp3">
+		<source src="photos/kebo-giro.mp3">
 	</audio>
 
-	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="images/mute.png" width="30px;"></a>
-	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="images/nomute.png" width="30px;"></a>
+	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="../../assets/mute.png" width="30px;"></a>
+	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="../../assets/nomute.png" width="30px;"></a>
 
 
 	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" style="overflow: hidden;" data-backdrop="-static" data-keyboard="false">
@@ -321,7 +322,7 @@
 					menghargai dukungan dan do"anya.
 				<p>
 				<div class="text-center">
-					<img src="photos/PROKES.jpg" width=345" height="235" />
+					<img src="photos/PROKES.jpg" width="345" height="235" />
 				</div>
 
 				<br><br>
@@ -427,40 +428,18 @@
 										</label>
 										<br>
 										<input type="submit" name="Submit" value="Kirim" style="width: 350px" class="Submit">
-
 									</form>
 
+									<br>
 									<img src="images/floww.png" style="width:100px;"><br>
-									<b>
-										<h4>Nikahalal Official
-										</h4>
-									</b>
-									<h4>Selamat menempuh hidup
-										baru,
-										semoga
-										menjadi
-										keluarga
-										yang
-										bahagia
-										selalu
-										dan
-										terimakasih
-										sudah
-										mempercayai
-										kami
-										sebagai
-										vendor
-										undangan
-										online
-										anda
-										love
-										u
-										untuk
-										kalian
-										berdua
-										💙💙🤗🤗
-										<br>
+									<?php $sql = mysqli_query($conn, "SELECT name, greeting from greeting order by created_at DESC");
+									while ($results = mysqli_fetch_assoc($sql)) { ?>
 										<hr>
+										<h4><label for=""><?= $results['name']; ?></label></h4>
+										<p><?= $results['greeting']; ?></p>
+									<?php } ?>
+									<hr>
+									<br>
 								</div>
 							</div>
 						</div>
@@ -553,6 +532,7 @@
 
 		<script>
 			document.getElementById("mute").style.display = "none";
+
 			var x = document.getElementById("myAudio");
 
 			function playAudio() {
