@@ -31,3 +31,4 @@ Keterangan nama foto ketika dikirim:
 5. Urutan Nomor Gallery foto 
 6. Satukan dalam zip or rar
 7. Boleh send di wa/gdrive (anyone can edit)
+
