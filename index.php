@@ -7,7 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>Wedding John 1 &mdash; Jane</title>
-	<link rel="stylesheet" href="style.html">
 	<meta property="og:title" content="The Wedding of John & Jane" />
 	<meta property="og:image" content="photos/metabanner.jpg" />
 	<meta property="og:url" content="" />
@@ -51,11 +50,11 @@
 
 <body>
 	<audio loop preload="auto" id="myAudio">
-		<source src="photos/kebo-giro.mp3">
+		<source src="medias/kebo-giro.mp3">
 	</audio>
 
-	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="../../assets/mute.png" width="30px;"></a>
-	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="../../assets/nomute.png" width="30px;"></a>
+	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="images/mute.png" width="30px;"></a>
+	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="images/nomute.png" width="30px;"></a>
 
 
 	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" style="overflow: hidden;" data-backdrop="-static" data-keyboard="false">
@@ -300,10 +299,10 @@
 						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">Lokasi
 							Pernikahan</h2>
 						<div class="text-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.241993198662!2d107.17965061435197!3d-6.362718964013728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjEnNDUuOCJTIDEwN8KwMTAnNTQuNiJF!5e0!3m2!1sid!2sid!4v1620479513149!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.241993198662!2d107.17965061435197!3d-6.362718964013728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjEnNDUuOCJTIDEwN8KwMTAnNTQuNiJF!5e0!3m2!1sid!2sid!4v1620479513149!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
 						</div>
 						<div class="text-center">
-							<a href="https://goo.gl/maps/xk7vpexCbcCuzeKYA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
+							<!-- <a href="https://goo.gl/maps/xk7vpexCbcCuzeKYA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a> -->
 						</div>
 					</div>
 
@@ -417,27 +416,21 @@
 								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
 									Ucapan dan Doa</h2>
 								<div>
-									<form action="#" method="POST">
-
-										<label>
-											<input type="text" name="Name" class="Input" style="width: 350px" placeholder="Nama Kamu" required>
-										</label>
-										<br>
-										<label><br>
-											<textarea name="Comment" class="Input" style="width: 350px" placeholder="Tulis Ucapan dan Doa" required></textarea>
-										</label>
-										<br>
-										<input type="submit" name="Submit" value="Kirim" style="width: 350px" class="Submit">
+									<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="form-horizontal text-center">
+										<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" required>
+										<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" required></textarea>
+										<button type="submit" name="Submit" class="btn btn-md btn-block text-center">Kirim</button>
 									</form>
 
 									<br>
 									<img src="images/floww.png" style="width:100px;"><br>
-									<?php $sql = mysqli_query($conn, "SELECT name, greeting from greeting order by created_at DESC");
-									while ($results = mysqli_fetch_assoc($sql)) { ?>
+									<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
+									foreach ($sql as $result) : ?>
 										<hr>
-										<h4><label for=""><?= $results['name']; ?></label></h4>
-										<p><?= $results['greeting']; ?></p>
-									<?php } ?>
+										<h4 style="margin:0px;padding-bottom:0px"><label for=""><?= $result['name']; ?></label></h4>
+										<sub class="text-muted" style="margin:0px;lline-height:1"><i class="fa fa-clock"><?= $result['created_at']; ?></i></sub>
+										<h4><?= $result['greeting']; ?></h4>
+									<?php endforeach; ?>
 									<hr>
 									<br>
 								</div>
@@ -446,8 +439,27 @@
 					</div>
 				</div>
 
-				<div class="text-center">
-					<!-- <img src="crafted.png" height="40" width="180" /><br> -->
+				<?php
+				$CustomerId = '2001';
+				$nama = $greeting = '';
+				$date = date('Y-m-d H:i:s');
+
+				if ($_SERVER["REQUEST_METHOD"] == "POST") {
+					$nama 		= $_POST['Name'];
+					$greeting 	= $_POST['Greeting'];
+
+					$query = mysqli_query($conn, "INSERT INTO greeting(customer_id,`name`,greeting,created_at) VALUES('$CustomerId','$nama','$greeting','$date')");
+					if (!$query) {
+						echo "Insert gagal";
+						echo mysqli_error_list($conn);
+					} else {
+						unset($_POST);
+					}
+				}
+				?>
+
+				<div class="text-center animate-box">
+					<img class="animated zoomIn slower" src="images/logo-nikahalal.png" height="180" width="auto" />
 				</div>
 			</div>
 		</div>
