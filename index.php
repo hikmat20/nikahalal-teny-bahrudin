@@ -42,7 +42,7 @@
 
 		@font-face {
 			font-family: AksaraJawa;
-			src: url(assets/fonts/JAWAPALSU.TTF);
+			src: url(assets/fonts/AmellindaWeddings.otf);
 		}
 	</style>
 
@@ -174,8 +174,8 @@
 								instagram.pria</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putra bungsu dari</i><br>Bapak H. Saman Wanita
-								<br>Ibu Hj. Maryati
+									Putra dari</i><br>Bapak. Marmi
+								<br>Ibu. Surat 
 							</p>
 
 						</div>
@@ -203,7 +203,7 @@
 							<a href="#" style="color:#ffffff">insagram.wanita</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putri bungsu dari</i><br>Bapak Junaedi<br>Ibu Ninik Erlis Fitriyani (Alm) </p>
+									Putri dari</i><br>Heru Sanjoyo (Heru Nur Kamit)<br>Ibu. Lilik Nuryati </p>
 						</div>
 					</div>
 				</div>
@@ -253,11 +253,10 @@
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
-											<span>30 Mei 2021
+											<span>15 Juli 2021
 										</div>
 										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai
-												Wanita</label><br><span style="color:#ffffff;">Kp. Cimahi rt/rw. 06/03
-												Ds. Sukamahi, Cikarang Pusat, Bekasi</span>
+												Wanita</label><br><span style="color:#ffffff;">Dsn. Kalianyar Ds. Ringinpitu Kec. Plemahan</span>
 										</p>
 									</div>
 								</div>
@@ -272,11 +271,10 @@
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
-											<span>30 Mei 2021
+											<span>15 Juli 2021
 										</div>
 										<p><label style="font-weight:normal; font-size:20px;">Kediaman Mempelai
-												Wanita</label><br><span style="color:#ffffff;">Kp. Cimahi rt/rw. 06/03
-												Ds. Sukamahi, Cikarang Pusat, Bekasi</span>
+												Wanita</label><br><span style="color:#ffffff;">Dsn. Kalianyar Ds. Ringinpitu Kec. Plemahan</span>
 										</p>
 									</div>
 								</div>

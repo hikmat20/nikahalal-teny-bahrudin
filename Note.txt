@@ -32,4 +32,3 @@ Keterangan nama foto ketika dikirim:
 6. Satukan dalam zip or rar
 7. Boleh send di wa/gdrive (anyone can edit)
 
-test
