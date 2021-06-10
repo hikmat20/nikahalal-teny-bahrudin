@@ -1,5 +1,6 @@
 <?php
 require_once '../config/connection.php';
+require_once '../models/timesince.php';
 
 $CustomerId = 'C0621001';
 $nama = $greeting = '';
@@ -18,11 +19,17 @@ if (isset($_POST)) {
         $callback = [
             'code' => 0,
             'msg' => "Faild add greeting. Please try again!",
+            'nama' => '',
+            'greeting' => '',
+            'date' => '',
         ];
     } else {
         $callback = [
             'code' => 1,
             'msg' => "Success. Your greeting has been added!",
+            'nama' => $nama,
+            'greeting' => $greeting,
+            'date' => time_since(strtotime($date)),
         ];
     }
     echo json_encode($callback);

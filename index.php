@@ -25,6 +25,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="assets/css/animate.css">
 	<link rel="stylesheet" href="assets/css/icomoon.css">
@@ -300,10 +301,10 @@
 						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">Lokasi
 							Pernikahan</h2>
 						<div class="text-center">
-							<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.241993198662!2d107.17965061435197!3d-6.362718964013728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjEnNDUuOCJTIDEwN8KwMTAnNTQuNiJF!5e0!3m2!1sid!2sid!4v1620479513149!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.241993198662!2d107.17965061435197!3d-6.362718964013728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjEnNDUuOCJTIDEwN8KwMTAnNTQuNiJF!5e0!3m2!1sid!2sid!4v1620479513149!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 						<div class="text-center">
-							<!-- <a href="https://goo.gl/maps/xk7vpexCbcCuzeKYA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a> -->
+							<a href="https://goo.gl/maps/xk7vpexCbcCuzeKYA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
 						</div>
 					</div>
 
@@ -425,17 +426,31 @@
 									<div id="alertMsg"></div>
 									<br>
 									<img src="images/floww.png" style="width:100px;"><br>
-									<div id="greeting">
-										<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
-										foreach ($sql as $result) : ?>
+									<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
+									require_once 'models/timesince.php';
+									if ($sql->num_rows > 0) : ?>
+										<div id="greeting" class="text-left">
 											<hr>
-											<h4 style="margin:0px;padding-bottom:0px"><label for=""><?= $result['name']; ?></label></h4>
-											<sub class="text-muted" style="margin:0px;lline-height:1"><i class="fa fa-clock"><?= $result['created_at']; ?></i></sub>
-											<h4><?= $result['greeting']; ?></h4>
-										<?php endforeach; ?>
-									</div>
-									<hr>
-									<br>
+											<?php
+											foreach ($sql as $result) : ?>
+												<div class="panel panel-default">
+													<div class="panel-heading">
+														<div class="panel-title">
+															<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><i class="fa fa-clock-o"></i> <?= time_since(strtotime($result['created_at'])); ?></i>
+															<h5 style="margin:0px;margin-bottom:0px;" class=""><label for=""><?= $result['name']; ?></label></h5>
+														</div>
+													</div>
+													<div class="panel-body">
+														<h4 class=""><?= $result['greeting']; ?></h4>
+													</div>
+												</div>
+											<?php endforeach;
+										else : ?>
+
+											<h4 class="text-center text-muted"><i>tidak ada ucapan</i></h4>
+										<?php endif; ?>
+
+										</div>
 								</div>
 							</div>
 						</div>
@@ -555,12 +570,27 @@
 					async: false,
 					dataType: 'JSON',
 					beforeSend: function() {
-						$('#alertMsg').html("<img src='images/loader.gif' height='40px'>")
+						$('#alertMsg').html("<img src='images/loader.gif' height='40px'>").fadeIn('slow').slideDown('slow')
 					},
 					success: function(result) {
 						if (result.code == 1) {
 							$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
-							$('#greeting').load('models/load_greeting.php');
+							$(`<div class="panel panel-default" id="newGreeting">
+									<div class="panel-heading">
+										<div class="panel-title">
+											<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><i class="fa fa-clock-o"> </i> ` + result.date + `</i>
+											<h5 style="margin:0px;margin-bottom:0px;" class=""><label for="">` + result.nama + `</label></h5>
+										</div>
+									</div>
+									<div class="panel-body">
+										<h4 class="">` + result.greeting + `</h4>
+									</div>
+								</div>
+								`).prependTo('#greeting').hide().fadeIn('3000');
+							setTimeout(function() {
+								$('.alert-success').fadeOut('slow');
+							}, 2000)
+
 						} else {
 							$('#alertMsg').html("<div class='alert alert-danger'> " + result.msg + "</div>")
 						}
