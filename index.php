@@ -1,12 +1,9 @@
-<?php include_once 'config/connection.php'; ?>
+<?php require_once 'config/connection.php'; ?>
 <!DOCTYPE html>
 <html style="height:100%">
 
 <head>
-<<<<<<< HEAD
-=======
 	<title>Wedding Teny &mdash; Bahrudin </title>
->>>>>>> 9afb89fc63fefa51033159e603e77cb9952a03ec
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -420,21 +417,23 @@
 								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
 									Ucapan dan Doa</h2>
 								<div>
-									<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" class="form-horizontal text-center">
+									<form method="POST" id="form-greeting" class="form-horizontal text-center">
 										<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" required>
 										<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" required></textarea>
-										<button type="submit" name="Submit" class="btn btn-md btn-block text-center">Kirim</button>
+										<button type="button" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
 									</form>
-
+									<div id="alertMsg"></div>
 									<br>
 									<img src="images/floww.png" style="width:100px;"><br>
-									<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
-									foreach ($sql as $result) : ?>
-										<hr>
-										<h4 style="margin:0px;padding-bottom:0px"><label for=""><?= $result['name']; ?></label></h4>
-										<sub class="text-muted" style="margin:0px;lline-height:1"><i class="fa fa-clock"><?= $result['created_at']; ?></i></sub>
-										<h4><?= $result['greeting']; ?></h4>
-									<?php endforeach; ?>
+									<div id="greeting">
+										<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
+										foreach ($sql as $result) : ?>
+											<hr>
+											<h4 style="margin:0px;padding-bottom:0px"><label for=""><?= $result['name']; ?></label></h4>
+											<sub class="text-muted" style="margin:0px;lline-height:1"><i class="fa fa-clock"><?= $result['created_at']; ?></i></sub>
+											<h4><?= $result['greeting']; ?></h4>
+										<?php endforeach; ?>
+									</div>
 									<hr>
 									<br>
 								</div>
@@ -442,25 +441,6 @@
 						</div>
 					</div>
 				</div>
-
-				<?php
-				$CustomerId = '2001';
-				$nama = $greeting = '';
-				$date = date('Y-m-d H:i:s');
-
-				if ($_SERVER["REQUEST_METHOD"] == "POST") {
-					$nama 		= $_POST['Name'];
-					$greeting 	= $_POST['Greeting'];
-
-					$query = mysqli_query($conn, "INSERT INTO greeting(customer_id,`name`,greeting,created_at) VALUES('$CustomerId','$nama','$greeting','$date')");
-					if (!$query) {
-						echo "Insert gagal";
-						echo mysqli_error_list($conn);
-					} else {
-						unset($_POST);
-					}
-				}
-				?>
 
 				<div class="text-center animate-box">
 					<img class="animated zoomIn slower" src="images/logo-nikahalal.png" height="180" width="auto" />
@@ -505,8 +485,8 @@
 				day: d.getDate(),
 				enableUtc: false
 			});
-		</script>
-		<script>
+
+			// menghitung
 			Hitung();
 
 			function Hitung() {
@@ -544,11 +524,10 @@
 				document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>Detik</span>";
 				Hitung();
 			}
-		</script>
 
-		<script>
+
+			// button audio
 			document.getElementById("mute").style.display = "none";
-
 			var x = document.getElementById("myAudio");
 
 			function playAudio() {
@@ -562,6 +541,35 @@
 				document.getElementById("mute").style.display = "none";
 				document.getElementById("un-mute").style.display = "inline-block";
 			}
+
+			// Send greeting
+			$(document).on('click', '#sendGreeting', function() {
+				// alert('send');
+				let formData = new FormData($('#form-greeting')[0])
+				$.ajax({
+					url: 'models/create_greeting.php',
+					type: 'POST',
+					data: formData,
+					contentType: false,
+					processData: false,
+					async: false,
+					dataType: 'JSON',
+					beforeSend: function() {
+						$('#alertMsg').html("<img src='images/loader.gif' height='40px'>")
+					},
+					success: function(result) {
+						if (result.code == 1) {
+							$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
+							$('#greeting').load('models/load_greeting.php');
+						} else {
+							$('#alertMsg').html("<div class='alert alert-danger'> " + result.msg + "</div>")
+						}
+					},
+					error: function(result) {
+						$('#alertMsg').html("<div class='alert alert-danger'>#Internal server error!!</div>")
+					}
+				})
+			})
 		</script>
 </body>
 
