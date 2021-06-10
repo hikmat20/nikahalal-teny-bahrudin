@@ -3,6 +3,10 @@
 <html style="height:100%">
 
 <head>
+<<<<<<< HEAD
+=======
+	<title>Wedding Teny &mdash; Bahrudin </title>
+>>>>>>> 9afb89fc63fefa51033159e603e77cb9952a03ec
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
@@ -66,7 +70,7 @@
 							The Wedding of
 						</span>
 						<span style="color:white;font-family: AksaraJawa;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
-							Pria & Wanita
+							Teny & Bahrudin
 						</span>
 						<div style="color:#3d2505;font-family: Lora, serif;margin-top:30px;">
 							<span style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
@@ -111,7 +115,7 @@
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1 class="animated growIn slower" data-id="2" style="font-family:Playfair, serif; color:#ffffff">The Wedding of</h1>
 								<h1 style="color:white;font-family: AksaraJawa;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
-									Pria &amp; Wanita</h1>
+									Teny &amp; Bahrudin</h1>
 								<br>
 								<br>
 
