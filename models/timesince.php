@@ -34,7 +34,7 @@ function time_since($original)
 
     if ($count < 1) {
         return  $print = "Baru saja";
-    } else if ($since < 3600) {
+    } else if ($since < 86400) {
         return  $print = "$count {$name}  yang lalu";
     } else if ($since >  86400 && $since <  172800) {
         return $print = 'Kemarin ' . date("H:i:s", $original);

@@ -177,7 +177,7 @@
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
 									Putra dari</i><br>Bapak. Marmi
-								<br>Ibu. Surat 
+								<br>Ibu. Surat
 							</p>
 
 						</div>
@@ -397,11 +397,9 @@
 
 			<div id="fh5co-testimonial">
 				<div class="container">
-
 					<div class="row">
 						<div class="row animate-box">
 							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-
 								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
 									Hadiah</h2>
 								<h4 class="animated growIn slower" font-size:12px;data-id="2" style="font-family:Dancing+Script; color:#3d2505">Bagi
@@ -503,10 +501,10 @@
 			Hitung();
 
 			function Hitung() {
-
+				// 15 Juli 2021
 				tahun = 2021;
-				bulan = 05;
-				hari = 30;
+				bulan = 07;
+				hari = 15;
 				jam = 09;
 				menit = 00;
 				detik = 00;
