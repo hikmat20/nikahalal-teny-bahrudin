@@ -74,8 +74,8 @@
 							<span style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
 								Dear Mr/Mrs/Ms
 							</span>
-
-							<p style="color: #ffffff; font-size:25px; font-weight:bold; padding-bottom:0px; border-radius:0px; text-align: center" id="write"></p>
+							
+							<p style="color: #ffffff; font-size:25px; font-weight:bold; padding-bottom:0px; border-radius:0px; text-align: center" id="write"><?=$_GET['to']?></p>
 							<p style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
 								You are invited to our wedding
 							</p>
@@ -176,7 +176,7 @@
 								instagram.pria</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putra dari</i><br>Bapak. Marmi
+									Putra pertama dari</i><br>Bapak. Marmi
 								<br>Ibu. Surat
 							</p>
 
@@ -205,7 +205,7 @@
 							<a href="#" style="color:#ffffff">insagram.wanita</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putri dari</i><br>Heru Sanjoyo (Heru Nur Kamit)<br>Ibu. Lilik Nuryati </p>
+									Putri pertama dari</i><br>Heru Sanjoyo (Heru Nur Kamit)<br>Ibu. Lilik Nuryati </p>
 						</div>
 					</div>
 				</div>
@@ -299,7 +299,7 @@
 						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">Lokasi
 							Pernikahan</h2>
 						<div class="text-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.241993198662!2d107.17965061435197!3d-6.362718964013728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMjEnNDUuOCJTIDEwN8KwMTAnNTQuNiJF!5e0!3m2!1sid!2sid!4v1620479513149!5m2!1sid!2sid" width="340" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9192247298856!2d112.18504231477745!3d-7.691817994455119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zN8KwNDEnMzAuNSJTIDExMsKwMTEnMTQuMCJF!5e0!3m2!1sid!2sid!4v1623519136435!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 						<div class="text-center">
 							<a href="https://goo.gl/maps/xk7vpexCbcCuzeKYA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
@@ -401,18 +401,9 @@
 						<div class="row animate-box">
 							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
-									Hadiah</h2>
-								<h4 class="animated growIn slower" font-size:12px;data-id="2" style="font-family:Dancing+Script; color:#3d2505">Bagi
-									keluarga, sahabat dan rekan
-									yang ingin mengirimkan hadiah, bisa dikirimkan melalui tautan berikut:</h4>
-
-								<h4 class="animated growIn slower" font-size:12px;data-id="2" style="font-family:Dancing+Script; color:#3d2505">BCA a/n
-									Siti Soleha<br>
-									5780775027</h4>
-
-								<span>Best Wishes</span>
+							<span>Best Wishes</span>
 								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
-									Ucapan dan Doa</h2>
+									Ucapan dan Do'a</h2>
 								<div>
 									<form method="POST" id="form-greeting" class="form-horizontal text-center">
 										<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" required>
