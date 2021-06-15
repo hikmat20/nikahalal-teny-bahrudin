@@ -7,8 +7,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-	<title>Wedding John 1 &mdash; Jane</title>
-	<meta property="og:title" content="The Wedding of John & Jane" />
+	<title>Wedding Teny &mdash; Bahrudin </title>
+	<meta property="og:title" content="The Wedding of Teny & Bahrudin" />
 	<meta property="og:image" content="photos/metabanner.jpg" />
 	<meta property="og:url" content="" />
 	<meta property="og:site_name" content="01 Januari 2022" />
@@ -269,7 +269,7 @@
 										</h3>
 										<div class="event-col">
 											<i class="icon-clock"></i>
-											<span>11.00 WIB-selesai </span>
+											<span>11.00 WIB - Selesai </span>
 										</div>
 										<div class="event-col">
 											<i class="icon-calendar"></i>
@@ -302,7 +302,7 @@
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9192247298856!2d112.18504231477745!3d-7.691817994455119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zN8KwNDEnMzAuNSJTIDExMsKwMTEnMTQuMCJF!5e0!3m2!1sid!2sid!4v1623519136435!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 						<div class="text-center">
-							<a href="https://goo.gl/maps/xk7vpexCbcCuzeKYA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
+							<a href="https://maps.app.goo.gl/bN6mSbQmpqXn4JZk9" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
 						</div>
 					</div>
 
@@ -334,33 +334,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							<span>Our Memories</span>
-							<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">Gallery
-							</h2>
+							
 
-							<img src="photos/1.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/2.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/3.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/4.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/5.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/6.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/7.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/8.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/9.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/10.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/11.jpg" style="width:100%">
-							<br><br>
-							<img src="photos/12.jpg" style="width:100%">
+							
 							<br><br>
 							</a>
 							</li>
