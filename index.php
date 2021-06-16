@@ -74,8 +74,8 @@
 							<span style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
 								Dear Mr/Mrs/Ms
 							</span>
-							
-							<p style="color: #ffffff; font-size:25px; font-weight:bold; padding-bottom:0px; border-radius:0px; text-align: center" id="write"><?=$_GET['to']?></p>
+
+							<p style="color: #ffffff; font-size:25px; font-weight:bold; padding-bottom:0px; border-radius:0px; text-align: center" id="write"><?= @$_GET['to'] ?></p>
 							<p style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
 								You are invited to our wedding
 							</p>
@@ -139,7 +139,7 @@
 		</header>
 
 		<!-- COUPLE -->
-		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/bg06.png);background-repeat: repeat;background-size: cover;">
+		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/bg-mempelai.png);background-repeat: repeat;background-size: cover;">
 			<div class=" container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -152,33 +152,21 @@
 				<div class="couple-wrap animate-box">
 					<div class="couple-half">
 						<div class="groom">
-							<img src="photos/cepepe.jpg" alt="groom" class="img-responsive">
+							<img src="photos/cewe.png" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
 
 
 							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
 								Mempelai Wanita</h3>
-							<!-- <img
-								src="../../upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
-								height="20" width="20" data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /> -->
 							<h3 style="color:white;display:block;font-size:30px;">
-							    Teny Yustian</h3>
-							<i class="fa fa-instagram"></i>
+								Teny Yustian</h3>
+							<i class="fa fa-instagram" style="color:#fff"></i>
 							<a href="https://www.instagram.com/tennytian/" style="color:#ffffff">
-								instagram</a>
+								tennytian</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putri pertama dari</i><br>Bapak. Heru Sanjoyo 
+									Putri pertama dari</i><br>Bapak. Heru Sanjoyo
 								<br>Ibu. Lilik Nuryati
 							</p>
 
@@ -187,28 +175,16 @@
 					<p class="heart text-center"><i class="icon-heart2" style="color:#3d2505;"></i></p>
 					<div class="couple-half">
 						<div class="bride">
-							<img src="photos/cepewe.jpg" alt="groom" class="img-responsive">
+							<img src="photos/cowo.png" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-bride">
 							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
 								Mempelai Pria</h3>
-							<!-- <img
-								src="../../upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
-								height="20" width="20" data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /> -->
-						<h3 style="color:white;display:block;font-size:30px;">
+							<h3 style="color:white;display:block;font-size:30px;">
 								Achmad Bahrudin </h3>
-								<i class="fa fa-instagram"></i>
+							<i class="fa fa-instagram" style="color:#fff"></i>
 							<a href="https://www.instagram.com/achmadbahrudin704/" style="color:#ffffff">
-								instagram</a>
+								achmadbahrudin704</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
 									Putra pertama dari</i><br>Bapak. Surat<br>Ibu. Marmi </p>
@@ -340,9 +316,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							
 
-							
+
+
 							<br><br>
 							</a>
 							</li>
@@ -383,164 +359,164 @@
 						<div class="row animate-box">
 							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
-							<span>Best Wishes</span>
-								<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
-									Ucapan dan Do'a</h2>
-								<div>
-									<form method="POST" id="form-greeting" class="form-horizontal text-center">
-										<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" required>
-										<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" required></textarea>
-										<button type="button" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
-									</form>
-									<div id="alertMsg"></div>
-									<br>
-									<img src="images/floww.png" style="width:100px;"><br>
-									<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
-									require_once 'models/timesince.php';
-									if ($sql->num_rows > 0) : ?>
-										<div id="greeting" class="text-left">
-											<hr>
-											<?php
-											foreach ($sql as $result) : ?>
-												<div class="panel panel-default">
-													<div class="panel-heading">
-														<div class="panel-title">
-															<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><i class="fa fa-clock-o"></i> <?= time_since(strtotime($result['created_at'])); ?></i>
-															<h5 style="margin:0px;margin-bottom:0px;" class=""><label for=""><?= $result['name']; ?></label></h5>
+									<span>Best Wishes</span>
+									<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
+										Ucapan dan Do'a</h2>
+									<div>
+										<form method="POST" id="form-greeting" class="form-horizontal text-center">
+											<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" required>
+											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" required></textarea>
+											<button type="button" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
+										</form>
+										<div id="alertMsg"></div>
+										<br>
+										<img src="images/floww.png" style="width:100px;"><br>
+										<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
+										require_once 'models/timesince.php';
+										if ($sql->num_rows > 0) : ?>
+											<div id="greeting" class="text-left">
+												<hr>
+												<?php
+												foreach ($sql as $result) : ?>
+													<div class="panel panel-default">
+														<div class="panel-heading">
+															<div class="panel-title">
+																<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><i class="fa fa-clock-o"></i> <?= time_since(strtotime($result['created_at'])); ?></i>
+																<h5 style="margin:0px;margin-bottom:0px;" class=""><label for=""><?= $result['name']; ?></label></h5>
+															</div>
+														</div>
+														<div class="panel-body">
+															<h4 class=""><?= $result['greeting']; ?></h4>
 														</div>
 													</div>
-													<div class="panel-body">
-														<h4 class=""><?= $result['greeting']; ?></h4>
-													</div>
-												</div>
-											<?php endforeach;
-										else : ?>
+												<?php endforeach;
+											else : ?>
 
-											<h4 class="text-center text-muted"><i>tidak ada ucapan</i></h4>
-										<?php endif; ?>
+												<h4 class="text-center text-muted"><i>tidak ada ucapan</i></h4>
+											<?php endif; ?>
 
-										</div>
-								</div>
+											</div>
+									</div>
 							</div>
-				</div>
+						</div>
 
-				<div class="text-center animate-box">
-					<img class="animated zoomIn slower" src="images/logo-nikahalal.png" height="180" width="auto" />
-				</div>
-			</div>
-		<div class="gototop js-top">
-			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
-		</div>
+						<div class="text-center animate-box">
+							<img class="animated zoomIn slower" src="images/logo-nikahalal.png" height="180" width="auto" />
+						</div>
+					</div>
+					<div class="gototop js-top">
+						<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+					</div>
 
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-		<script src="assets/js/jquery.easing.1.3.js"></script>
-		<script src="assets/js/jquery.waypoints.min.js"></script>
-		<script src="assets/js/owl.carousel.min.js"></script>
-		<script src="assets/js/jquery.countTo.js"></script>
-		<script src="assets/js/jquery.stellar.min.js"></script>
-		<script src="assets/js/jquery.magnific-popup.min.js"></script>
-		<script src="assets/js/magnific-popup-options.js"></script>
-		<script src="assets/js/simplyCountdown.js"></script>
-		<script src="assets/js/main.js"></script>
-		<script src="assets/js/index.js"></script>
-		<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
-
-
-		<script>
-			var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
-
-			// default example
-			simplyCountdown(".simply-countdown-one", {
-				year: d.getFullYear(),
-				month: d.getMonth() + 1,
-				day: d.getDate()
-			});
-
-			//jQuery example
-			$("#simply-countdown-losange").simplyCountdown({
-				year: d.getFullYear(),
-				month: d.getMonth() + 1,
-				day: d.getDate(),
-				enableUtc: false
-			});
-
-			// menghitung
-			Hitung();
-
-			function Hitung() {
-				// 15 Juli 2021
-				tahun = 2021;
-				bulan = 07;
-				hari = 15;
-				jam = 09;
-				menit = 00;
-				detik = 00;
-
-				setTimeout(function() {
-					tglTarget = new Date(tahun, (bulan - 1), hari, jam, menit, detik, 00);
-					tglSkrg = new Date();
-					tglSkrg = new Date(tglSkrg.getFullYear(), tglSkrg.getMonth(), tglSkrg.getDate(), tglSkrg.getHours(), tglSkrg.getMinutes(), tglSkrg.getSeconds(), 00, 00);
-					var sisaHari = parseInt((tglTarget - tglSkrg) / 86400000);
-					var sisaJam = parseInt((tglTarget - tglSkrg) / 3600000);
-					var sisaMenit = parseInt((tglTarget - tglSkrg) / 60000);
-					var sisaDetik = parseInt((tglTarget - tglSkrg) / 1000);
-					detik = sisaMenit * 60;
-					detik = sisaDetik - detik;
-					menit = sisaJam * 60;
-					menit = sisaMenit - menit;
-					jam = sisaHari * 24;
-					jam = (sisaJam - jam) < 0 ? 0 : sisaJam - jam;
-					hari = sisaHari;
-					mulaiHitung(hari, jam, menit, detik, tahun);
-				}, 1000);
-			}
-
-			function mulaiHitung(hari, jam, menit, detik, tahun) {
-				document.getElementById("hitungmundur1").innerHTML = "" + hari + "<span>Hari</span>";
-				document.getElementById("hitungmundur2").innerHTML = "" + jam + "<span>Jam</span>";
-				document.getElementById("hitungmundur3").innerHTML = "" + menit + "<span>Menit</span>";
-				document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>Detik</span>";
-				Hitung();
-			}
+					<script src="assets/js/jquery.easing.1.3.js"></script>
+					<script src="assets/js/jquery.waypoints.min.js"></script>
+					<script src="assets/js/owl.carousel.min.js"></script>
+					<script src="assets/js/jquery.countTo.js"></script>
+					<script src="assets/js/jquery.stellar.min.js"></script>
+					<script src="assets/js/jquery.magnific-popup.min.js"></script>
+					<script src="assets/js/magnific-popup-options.js"></script>
+					<script src="assets/js/simplyCountdown.js"></script>
+					<script src="assets/js/main.js"></script>
+					<script src="assets/js/index.js"></script>
+					<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"></script>
 
 
-			// button audio
-			document.getElementById("mute").style.display = "none";
-			var x = document.getElementById("myAudio");
+					<script>
+						var d = new Date(new Date().getTime() + 200 * 120 * 120 * 2000);
 
-			function playAudio() {
-				x.play();
-				document.getElementById("un-mute").style.display = "none";
-				document.getElementById("mute").style.display = "inline-block";
-			}
+						// default example
+						simplyCountdown(".simply-countdown-one", {
+							year: d.getFullYear(),
+							month: d.getMonth() + 1,
+							day: d.getDate()
+						});
 
-			function pauseAudio() {
-				x.pause();
-				document.getElementById("mute").style.display = "none";
-				document.getElementById("un-mute").style.display = "inline-block";
-			}
+						//jQuery example
+						$("#simply-countdown-losange").simplyCountdown({
+							year: d.getFullYear(),
+							month: d.getMonth() + 1,
+							day: d.getDate(),
+							enableUtc: false
+						});
 
-			// Send greeting
-			$(document).on('click', '#sendGreeting', function() {
-				// alert('send');
-				let formData = new FormData($('#form-greeting')[0])
-				$.ajax({
-					url: 'models/create_greeting.php',
-					type: 'POST',
-					data: formData,
-					contentType: false,
-					processData: false,
-					async: false,
-					dataType: 'JSON',
-					beforeSend: function() {
-						$('#alertMsg').html("<img src='images/loader.gif' height='40px'>").fadeIn('slow').slideDown('slow')
-					},
-					success: function(result) {
-						if (result.code == 1) {
-							$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
-							$(`<div class="panel panel-default" id="newGreeting">
+						// menghitung
+						Hitung();
+
+						function Hitung() {
+							// 15 Juli 2021
+							tahun = 2021;
+							bulan = 07;
+							hari = 15;
+							jam = 09;
+							menit = 00;
+							detik = 00;
+
+							setTimeout(function() {
+								tglTarget = new Date(tahun, (bulan - 1), hari, jam, menit, detik, 00);
+								tglSkrg = new Date();
+								tglSkrg = new Date(tglSkrg.getFullYear(), tglSkrg.getMonth(), tglSkrg.getDate(), tglSkrg.getHours(), tglSkrg.getMinutes(), tglSkrg.getSeconds(), 00, 00);
+								var sisaHari = parseInt((tglTarget - tglSkrg) / 86400000);
+								var sisaJam = parseInt((tglTarget - tglSkrg) / 3600000);
+								var sisaMenit = parseInt((tglTarget - tglSkrg) / 60000);
+								var sisaDetik = parseInt((tglTarget - tglSkrg) / 1000);
+								detik = sisaMenit * 60;
+								detik = sisaDetik - detik;
+								menit = sisaJam * 60;
+								menit = sisaMenit - menit;
+								jam = sisaHari * 24;
+								jam = (sisaJam - jam) < 0 ? 0 : sisaJam - jam;
+								hari = sisaHari;
+								mulaiHitung(hari, jam, menit, detik, tahun);
+							}, 1000);
+						}
+
+						function mulaiHitung(hari, jam, menit, detik, tahun) {
+							document.getElementById("hitungmundur1").innerHTML = "" + hari + "<span>Hari</span>";
+							document.getElementById("hitungmundur2").innerHTML = "" + jam + "<span>Jam</span>";
+							document.getElementById("hitungmundur3").innerHTML = "" + menit + "<span>Menit</span>";
+							document.getElementById("hitungmundur4").innerHTML = "" + detik + "<span>Detik</span>";
+							Hitung();
+						}
+
+
+						// button audio
+						document.getElementById("mute").style.display = "none";
+						var x = document.getElementById("myAudio");
+
+						function playAudio() {
+							x.play();
+							document.getElementById("un-mute").style.display = "none";
+							document.getElementById("mute").style.display = "inline-block";
+						}
+
+						function pauseAudio() {
+							x.pause();
+							document.getElementById("mute").style.display = "none";
+							document.getElementById("un-mute").style.display = "inline-block";
+						}
+
+						// Send greeting
+						$(document).on('click', '#sendGreeting', function() {
+							// alert('send');
+							let formData = new FormData($('#form-greeting')[0])
+							$.ajax({
+								url: 'models/create_greeting.php',
+								type: 'POST',
+								data: formData,
+								contentType: false,
+								processData: false,
+								async: false,
+								dataType: 'JSON',
+								beforeSend: function() {
+									$('#alertMsg').html("<img src='images/loader.gif' height='40px'>").fadeIn('slow').slideDown('slow')
+								},
+								success: function(result) {
+									if (result.code == 1) {
+										$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
+										$(`<div class="panel panel-default" id="newGreeting">
 									<div class="panel-heading">
 										<div class="panel-title">
 											<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><i class="fa fa-clock-o"> </i> ` + result.date + `</i>
@@ -552,20 +528,20 @@
 									</div>
 								</div>
 								`).prependTo('#greeting').hide().fadeIn('3000');
-							setTimeout(function() {
-								$('.alert-success').fadeOut('slow');
-							}, 2000)
+										setTimeout(function() {
+											$('.alert-success').fadeOut('slow');
+										}, 2000)
 
-						} else {
-							$('#alertMsg').html("<div class='alert alert-danger'> " + result.msg + "</div>")
-						}
-					},
-					error: function(result) {
-						$('#alertMsg').html("<div class='alert alert-danger'>#Internal server error!!</div>")
-					}
-				})
-			})
-		</script>
+									} else {
+										$('#alertMsg').html("<div class='alert alert-danger'> " + result.msg + "</div>")
+									}
+								},
+								error: function(result) {
+									$('#alertMsg').html("<div class='alert alert-danger'>#Internal server error!!</div>")
+								}
+							})
+						})
+					</script>
 </body>
 
 </html>
