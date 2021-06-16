@@ -63,16 +63,15 @@ body {
 }
 @media (max-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/beners.jpg);
+      background-image: url(../../photos/bg-mempelai.png);
    }
 
    #fh5co-header2 {
-      background-image: url(../../photos/cover.jpg);
+      background-image: url(../../photos/cover.png);
       background-attachment: scroll;
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-size: cover;
+      background-size: contain;
+      background-position: top;
       height: 100vh;
    }
 
@@ -85,16 +84,15 @@ body {
 }
 @media (min-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/banner1.jpg);
+      background-image: url(../../photos/bg-mempelai.png);
    }
 
    #fh5co-header2 {
-      background-image: url(../../photos/cover1.jpg);
+      background-image: url(../../photos/cover1.png);
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      background-size: cover;
+      background-size: auto;
+      background-position: top;
       height: 100vh;
    }
 

@@ -139,7 +139,7 @@
 		</header>
 
 		<!-- COUPLE -->
-		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/bg-mempelai.png);background-repeat: repeat;background-size: cover;">
+		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/banner1.png);background-repeat: repeat;background-size: cover;">
 			<div class=" container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
