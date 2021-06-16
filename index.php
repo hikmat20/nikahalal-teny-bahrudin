@@ -158,37 +158,6 @@
 
 
 							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
-								Mempelai Pria</h3>
-							<!-- <img
-								src="../../upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
-								height="20" width="20" data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-								data-pagespeed-url-hash="1096256962"
-								onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /> -->
-							<i class="fa fa-instagram"></i>
-							<a href="#" style="color:#ffffff">
-								instagram.pria</a>
-							<!-- untuk deskripsi mempelai -->
-							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putra pertama dari</i><br>Bapak. Marmi
-								<br>Ibu. Surat
-							</p>
-
-						</div>
-					</div>
-					<p class="heart text-center"><i class="icon-heart2" style="color:#3d2505;"></i></p>
-					<div class="couple-half">
-						<div class="bride">
-							<img src="photos/cepewe.jpg" alt="groom" class="img-responsive">
-						</div>
-						<div class="desc-bride">
-							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
 								Mempelai Wanita</h3>
 							<!-- <img
 								src="../../upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
@@ -202,10 +171,47 @@
 								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
 								data-pagespeed-url-hash="1096256962"
 								onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /> -->
-							<a href="#" style="color:#ffffff">insagram.wanita</a>
+							<h3 style="color:white;display:block;font-size:30px;">
+							    Teny Yustian</h3>
+							<i class="fa fa-instagram"></i>
+							<a href="https://www.instagram.com/tennytian/" style="color:#ffffff">
+								instagram</a>
 							<!-- untuk deskripsi mempelai -->
 							<p style="color:#ffffff;"><i style="font-size:15px;">
-									Putri pertama dari</i><br>Heru Sanjoyo (Heru Nur Kamit)<br>Ibu. Lilik Nuryati </p>
+									Putri pertama dari</i><br>Bapak. Heru Sanjoyo 
+								<br>Ibu. Lilik Nuryati
+							</p>
+
+						</div>
+					</div>
+					<p class="heart text-center"><i class="icon-heart2" style="color:#3d2505;"></i></p>
+					<div class="couple-half">
+						<div class="bride">
+							<img src="photos/cepewe.jpg" alt="groom" class="img-responsive">
+						</div>
+						<div class="desc-bride">
+							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
+								Mempelai Pria</h3>
+							<!-- <img
+								src="../../upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png"
+								height="20" width="20" data-pagespeed-url-hash="1096256962"
+								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+								data-pagespeed-url-hash="1096256962"
+								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+								data-pagespeed-url-hash="1096256962"
+								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+								data-pagespeed-url-hash="1096256962"
+								onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
+								data-pagespeed-url-hash="1096256962"
+								onload="pagespeed.CriticalImages.checkImageForCriticality(this);" /> -->
+						<h3 style="color:white;display:block;font-size:30px;">
+								Achmad Bahrudin </h3>
+								<i class="fa fa-instagram"></i>
+							<a href="https://www.instagram.com/achmadbahrudin704/" style="color:#ffffff">
+								instagram</a>
+							<!-- untuk deskripsi mempelai -->
+							<p style="color:#ffffff;"><i style="font-size:15px;">
+									Putra pertama dari</i><br>Bapak. Surat<br>Ibu. Marmi </p>
 						</div>
 					</div>
 				</div>
@@ -416,16 +422,12 @@
 										</div>
 								</div>
 							</div>
-						</div>
-					</div>
 				</div>
 
 				<div class="text-center animate-box">
 					<img class="animated zoomIn slower" src="images/logo-nikahalal.png" height="180" width="auto" />
 				</div>
 			</div>
-		</div>
-
 		<div class="gototop js-top">
 			<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 		</div>
