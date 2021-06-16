@@ -195,7 +195,7 @@
 		</div>
 
 		<!-- countdonw -->
-		<div id="fh5co-gallery" class="fh5co-bg" style=" background-image:url(photos/bg07.jpg);background-repeat: repeat;background-size: cover;">
+		<div id="fh5co-gallery" class="fh5co-bg" style=" background-image:url(photos/bg08.jpg);background-repeat: repeat;background-size: cover;">
 			<div class="container">
 				<div class="couple-wrap animate-box">
 					<div class="col-md-12" style="text-align:center;">
