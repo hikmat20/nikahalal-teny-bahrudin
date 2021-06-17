@@ -357,8 +357,8 @@
 										Ucapan dan Do'a</h2>
 									<div>
 										<form method="POST" id="form-greeting" class="form-horizontal text-center">
-											<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" required>
-											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" required></textarea>
+											<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" id="nama_kamu" required>
+											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" id="greating" required></textarea>
 											<button type="button" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
 										</form>
 										<div id="alertMsg"></div>
@@ -508,6 +508,8 @@
 								},
 								success: function(result) {
 									if (result.code == 1) {
+										$('#nama_kamu').val('');
+										$('#greating').val('');
 										$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
 										$(`<div class="panel panel-default" id="newGreeting">
 									<div class="panel-heading">
