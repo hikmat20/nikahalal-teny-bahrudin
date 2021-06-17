@@ -59,7 +59,7 @@
 	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="images/nomute.png" width="30px;"></a>
 
 
-	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" style="overflow: hidden;" data-backdrop="-static" data-keyboard="false">
+	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" style="overflow: hidden;" data-backdrop="static" data-keyboard="false">
 		<div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
 			<div class="modal-content-full-width modal-content ">
 				<div id="fh5co-header2">
@@ -120,7 +120,7 @@
 								<br>
 								<br>
 								<p>
-									<a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Pria+Wanita+Wedding+Day&amp;dates=20210530T09000/20210530T17000&amp;ctz=Asia/Jakarta&amp;details=Kami+akan+sangat+gembira+ketika+kita+bisa+bertemu+di+acara+kami.%3Cbr%3E%3Cbr%3Esalam+hangat%3Cbr%3EPria+-+Wanita&amp;location=%20Hotel%20Kediaman%20Mempelai%20Wanita&amp;pli=1&amp;uid=1521339627addtocalendar&amp;sf=true&amp;output=xml" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">Save
+									<a href="https://calendar.google.com/calendar/u/0?cid=bzRzZzNpbGd0aGpoOWdoY3B1NmR1ZGZmNHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">Save
 										thedate</a>
 								</p>
 								<br>
@@ -139,13 +139,13 @@
 		</header>
 
 		<!-- COUPLE -->
-		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/banner1.png);background-repeat: repeat;background-size: cover;">
+		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/banner1.png);background-repeat: no-repeat;background-size: cover; background-position: left top;">
 			<div class=" container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
 						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">
-							Assalamu"alaikum Warahmatullahi Wabarakatuh</h2>
-						<p style="color:#ffffff;">Dengan menyebut nama Allah Subhanahu Wa Ta"ala yang Maha Pengasih dan
+							Assalamu'alaikum Warahmatullahi Wabarakatuh</h2>
+						<p style="color:#ffffff;">Dengan menyebut nama Allah Subhanahu Wa Ta'ala yang Maha Pengasih dan
 							Maha Penyayang. Kami mengundang Anda untuk menghadiri pernikahan putra-putri kami</p>
 					</div>
 				</div>
@@ -211,7 +211,7 @@
 		</div>
 
 		<!-- EVENT -->
-		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(photos/banner1.jpg);">
+		<div id="fh5co-event" class="fh5co-bg" style="background-image:url(photos/banner1.jpg); background-position:right top;">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -309,20 +309,13 @@
 				<br><br>
 				<h3 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:18px;">
 					Hormat Kami, <br>
-					Pria & Wanita</h3>
+					Teny & Bahrudin</h3>
 			</div>
 
 			<div id="fh5co-gallery" class="fh5co-section-gray">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-
-
-
-							<br><br>
-							</a>
-							</li>
-							</ul>
 							<div class="text-center">
 								<p style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">you
 									are my answered prayer, my fulfilled wish, my realized dream.</p>

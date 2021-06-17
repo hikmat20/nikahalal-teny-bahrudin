@@ -63,7 +63,7 @@ body {
 }
 @media (max-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/bg-mempelai.png);
+      background-image: url(../../photos/banner.png);
    }
 
    #fh5co-header2 {
@@ -72,7 +72,7 @@ body {
       background-repeat: no-repeat;
       background-size: contain;
       background-position: top;
-      height: 100vh;
+      height: 790px;
    }
 
    .caseless {
@@ -84,7 +84,7 @@ body {
 }
 @media (min-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/bg-mempelai.png);
+      background-image: url(../../photos/banner.png);
    }
 
    #fh5co-header2 {
@@ -93,7 +93,7 @@ body {
       background-repeat: no-repeat;
       background-size: auto;
       background-position: top;
-      height: 100vh;
+      height: 790px;
    }
 
    .caseless {
