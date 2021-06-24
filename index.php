@@ -367,7 +367,7 @@
 										<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
 										require_once 'models/timesince.php';
 										if ($sql->num_rows > 0) : ?>
-											<div id="greeting" class="text-left">
+											<div id="greeting" class="text-left" style="padding: 0px 7px ;">
 												<hr>
 												<?php
 												foreach ($sql as $result) : ?>
