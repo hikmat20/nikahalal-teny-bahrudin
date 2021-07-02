@@ -222,8 +222,8 @@
 				<div class="row">
 					<div class="display-t">
 						<div class="display-tc">
-							<div class="col-md-10 col-md-offset-1">
-								<div class="col-md-6 col-sm-6 text-center">
+							<div class="col-md-12">
+								<div class="col-md-4 col-sm-6 text-center">
 									<div class="event-wrap animate-box">
 										<h3>
 											Akad
@@ -241,7 +241,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="col-md-6 col-sm-6 text-center">
+								<div class="col-md-4 col-sm-6 text-center">
 									<div class="event-wrap animate-box">
 										<h3>
 											Resepsi
@@ -259,8 +259,29 @@
 										</p>
 									</div>
 								</div>
+								<div class="col-md-4 col-sm-6 text-center">
+									<div class="event-wrap animate-box">
+										<h3>
+											UNDUH MANTU
+										</h3>
+										<div class="event-col">
+											<i class="icon-clock"></i>
+											<span>11.00 WIB - Selesai </span>
+										</div>
+										<div class="event-col">
+											<i class="icon-calendar"></i>
+											<span>16 Juli 2021
+										</div>
+										<p>
+											<label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Pria</label>
+											<br><span style="color:#ffffff;">Jl. Karangasem, Sumbersari, Badas, Kec. Badas, Kediri, Jawa Timur</span>
+										</p>
+									</div>
+								</div>
 							</div>
+							<div class="col-md-10 col-md-offset-3">
 
+							</div>
 						</div>
 
 					</div>
