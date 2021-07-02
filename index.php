@@ -139,7 +139,7 @@
 		</header>
 
 		<!-- COUPLE -->
-		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/banner1.png);background-repeat: no-repeat;background-size: cover; background-position: left top;">
+		<div id="fh5co-couple" class="fh5co-bg" style=" background-image:url(photos/banner1.jpg);background-repeat: no-repeat;background-size: cover; background-position: left top;">
 			<div class=" container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -338,7 +338,7 @@
 										<form method="POST" id="form-greeting" class="form-horizontal text-center">
 											<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" id="nama_kamu" required>
 											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" id="greating" required></textarea>
-											<button type="button" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
+											<button type="submit" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
 										</form>
 										<div id="alertMsg"></div>
 										<br>
