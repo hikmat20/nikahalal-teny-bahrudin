@@ -9,7 +9,7 @@
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<title>Wedding Teny &mdash; Bahrudin </title>
 	<meta property="og:title" content="The Wedding of Teny & Bahrudin" />
-	<meta property="og:image" content="photos/metabanner.jpg" />
+	<meta property="og:image" content="photos/cover2.jpg" />
 	<meta property="og:url" content="" />
 	<meta property="og:site_name" content="01 Januari 2022" />
 	<meta property="og:description" content="01 Januari 2022" />
