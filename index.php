@@ -308,15 +308,27 @@
 			<div class="overlay" style="background-color:rgb(0 0 0 / 77%)"></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-bottom:0px;">
-						<span>Google Maps</span>
-						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">Lokasi
-							Pernikahan</h2>
+					<div class="col-md-12 fh5co-heading  animate-box" style="text-align: center;margin-bottom:2em ;">
+						<span class="text-center">Google Maps</span>
+					</div>
+					<div class="col-md-6 text-center animate-box" style="margin-bottom:0px;">
+						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">
+							Lokasi Pernikahan</h2>
 						<div class="text-center">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.9192247298856!2d112.18504231477745!3d-7.691817994455119!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0!2zN8KwNDEnMzAuNSJTIDExMsKwMTEnMTQuMCJF!5e0!3m2!1sid!2sid!4v1623519136435!5m2!1sid!2sid" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 						<div class="text-center" style="padding-top: 50px;">
 							<a href="https://maps.app.goo.gl/bN6mSbQmpqXn4JZk9" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
+						</div>
+					</div>
+					<div class="col-md-6 text-center animate-box" style="margin-bottom:0px;">
+						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">
+							Lokasi Unduh Mantu</h2>
+						<div class="text-center">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.022450115668!2d112.2045997555734!3d-7.6994244825892935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDEnNTguMiJTIDExMsKwMTInMjAuMyJF!5e0!3m2!1sid!2sid!4v1625245744920!5m2!1sid!2sid" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						<div class="text-center" style="padding-top: 50px;">
+							<a href="https://maps.app.goo.gl/tvbSunSgb5WXAGNNA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
 						</div>
 					</div>
 				</div>
