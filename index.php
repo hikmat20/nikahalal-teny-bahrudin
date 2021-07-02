@@ -273,9 +273,11 @@
 		<div id="fh5co-gallery" class="fh5co-bg" style=" background-image:url(photos/bg08.jpg);background-repeat: repeat;background-size: cover;">
 			<div class="container">
 				<div class="couple-wrap animate-box">
-					<div class="col-md-12 text-center">
-						<img src="photos/arrum.png" alt="Ar Rum" class="img-responsive">
-						<p>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu merasa tenang dan tentram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.” (QS. Ar-Rum: 21)</p>
+					<div class="row">
+						<div class="col-md-12 text-center ">
+							<img src="photos/arrum.png" alt="Ar Rum" class="img-responsive" style="margin: 0 auto;">
+							<p>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu merasa tenang dan tentram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.” (QS. Ar-Rum: 21)</p>
+						</div>
 					</div>
 				</div>
 			</div>
