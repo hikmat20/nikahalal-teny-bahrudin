@@ -63,7 +63,7 @@ body {
 }
 @media (max-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/banner.png);
+      background-image: url(../../photos/banner.jpg);
    }
 
    #fh5co-header2 {
@@ -84,7 +84,7 @@ body {
 }
 @media (min-width: 720px) {
    #fh5co-header {
-      background-image: url(../../photos/banner.png);
+      background-image: url(../../photos/banner.jpg);
    }
 
    #fh5co-header2 {
