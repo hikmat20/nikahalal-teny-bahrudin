@@ -120,7 +120,7 @@
 								<br>
 								<br>
 								<p>
-									<a href="https://calendar.google.com/calendar/u/0?cid=bzRzZzNpbGd0aGpoOWdoY3B1NmR1ZGZmNHNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">Save
+									<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTc4YmtnZ2pqcnNkbm5ubjY5bDkyNzNyaWggbzRzZzNpbGd0aGpoOWdoY3B1NmR1ZGZmNHNAZw&tmsrc=o4sg3ilgthjh9ghcpu6dudff4s%40group.calendar.google.com" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">Save
 										thedate</a>
 								</p>
 								<br>
@@ -223,7 +223,6 @@
 					<div class="display-t">
 						<div class="display-tc">
 							<div class="col-md-10 col-md-offset-1">
-
 								<div class="col-md-6 col-sm-6 text-center">
 									<div class="event-wrap animate-box">
 										<h3>
@@ -260,8 +259,8 @@
 										</p>
 									</div>
 								</div>
-
 							</div>
+
 						</div>
 
 					</div>
