@@ -155,8 +155,6 @@
 							<img src="photos/cewe.png" alt="groom" class="img-responsive">
 						</div>
 						<div class="desc-groom">
-
-
 							<h3 style="color:white;font-family:AksaraJawa;display:block;font-size:30px;">
 								Mempelai Wanita</h3>
 							<h3 style="color:white;display:block;font-size:30px;">
@@ -271,6 +269,18 @@
 			</div>
 		</div>
 
+		<!-- Ar Rum -->
+		<div id="fh5co-gallery" class="fh5co-bg" style=" background-image:url(photos/bg08.jpg);background-repeat: repeat;background-size: cover;">
+			<div class="container">
+				<div class="couple-wrap animate-box">
+					<div class="col-md-12 text-center">
+						<img src="photos/arrum.png" alt="Ar Rum" class="img-responsive">
+						<p>“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri, supaya kamu merasa tenang dan tentram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir.” (QS. Ar-Rum: 21)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<!-- MAPS, LOCATION -->
 		<div id="fh5co-event" class="fh5co-cover" style="background-image:url(photos/bg04.jpg);background-repeat: repeat;background-size: cover;">
 			<div class="overlay" style="background-color:rgb(0 0 0 / 77%)"></div>
@@ -337,8 +347,8 @@
 									<div style="padding:0 15px">
 										<form method="POST" id="form-greeting" class="form-horizontal text-center">
 											<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" id="nama_kamu" required>
-											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" id="greating" required></textarea>
-											<button type="submit" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
+											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" id="greeting" required></textarea>
+											<button type="button" name="Submit" id="sendGreeting" class="btn btn-md btn-block text-center">Kirim</button>
 										</form>
 										<div id="alertMsg"></div>
 										<br>
@@ -346,7 +356,7 @@
 										<?php $sql = mysqli_query($conn, "SELECT name, greeting,created_at from greeting order by created_at DESC");
 										require_once 'models/timesince.php';
 										if ($sql->num_rows > 0) : ?>
-											<div id="greeting" class="text-left" style="padding: 0px 7px ;">
+											<div id="list-greeting" class="text-left" style="padding: 0px 7px ;">
 												<hr>
 												<?php
 												foreach ($sql as $result) : ?>
@@ -473,24 +483,31 @@
 						// Send greeting
 						$(document).on('click', '#sendGreeting', function() {
 							// alert('send');
-							let formData = new FormData($('#form-greeting')[0])
-							$.ajax({
-								url: 'models/create_greeting.php',
-								type: 'POST',
-								data: formData,
-								contentType: false,
-								processData: false,
-								async: false,
-								dataType: 'JSON',
-								beforeSend: function() {
-									$('#alertMsg').html("<img src='images/loader.gif' height='40px'>").fadeIn('slow').slideDown('slow')
-								},
-								success: function(result) {
-									if (result.code == 1) {
-										$('#nama_kamu').val('');
-										$('#greating').val('');
-										$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
-										$(`<div class="panel panel-default" id="newGreeting">
+							let name = $('#nama_kamu').val();
+							let greeting = $('#greeting').val();
+							if (name == '') {
+								alert("Isi Nama kamu dulu ya!");
+							} else if (greeting == '') {
+								alert("Jangan lupa kasih Ucapan dan Do'a kamu untuk kedua mempelai!");
+							} else {
+								let formData = new FormData($('#form-greeting')[0])
+								$.ajax({
+									url: 'models/create_greeting.php',
+									type: 'POST',
+									data: formData,
+									contentType: false,
+									processData: false,
+									async: false,
+									dataType: 'JSON',
+									beforeSend: function() {
+										$('#alertMsg').html("<img src='images/loader.gif' height='40px'>").fadeIn('slow').slideDown('slow')
+									},
+									success: function(result) {
+										if (result.code == 1) {
+											$('#nama_kamu').val('');
+											$('#greeting').val('');
+											$('#alertMsg').html("<div class='alert alert-success'>" + result.msg + "</div>")
+											$(`<div class="panel panel-default" id="newGreeting">
 									<div class="panel-heading">
 										<div class="panel-title">
 											<i class="text-muted pull-right" style="margin:0px;line-height:1;font-size:12px;"><i class="fa fa-clock-o"> </i> ` + result.date + `</i>
@@ -501,19 +518,20 @@
 										<h4 class="">` + result.greeting + `</h4>
 									</div>
 								</div>
-								`).prependTo('#greeting').hide().fadeIn('3000');
-										setTimeout(function() {
-											$('.alert-success').fadeOut('slow');
-										}, 2000)
+								`).prependTo('#list-greeting').hide().fadeIn('3000');
+											setTimeout(function() {
+												$('.alert-success').fadeOut('slow');
+											}, 2000)
 
-									} else {
-										$('#alertMsg').html("<div class='alert alert-danger'> " + result.msg + "</div>")
+										} else {
+											$('#alertMsg').html("<div class='alert alert-danger'> " + result.msg + "</div>")
+										}
+									},
+									error: function(result) {
+										$('#alertMsg').html("<div class='alert alert-danger'>#Internal server error!!</div>")
 									}
-								},
-								error: function(result) {
-									$('#alertMsg').html("<div class='alert alert-danger'>#Internal server error!!</div>")
-								}
-							})
+								})
+							}
 						})
 					</script>
 </body>
