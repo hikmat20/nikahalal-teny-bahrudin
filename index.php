@@ -326,26 +326,6 @@
 				</div>
 			</div>
 
-			<!-- <div id="fh5co-testimonial" style="background-color:#3d2505;">
-				<div class="container">
-					<div class="row">
-						<div class="row animate-box">
-							<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-								<span></span>
-								<h2 style="color:#ffffff;font-family:AksaraJawa;display:block;font-size:32px;">Rsvp
-								</h2>
-								<br>
-								<iframe
-									src="https://docs.google.com/forms/d/e/1FAIpQLScpc4wpYmaXnFpPkdvuSj1fptWp0hQP0KSE5zv5igrFUViwYg/viewform?embedded=true"
-									width="360" height="879" frameborder="0" marginheight="0"
-									marginwidth="0">Loading…</iframe>
-								<br><br>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-
 			<div id="fh5co-testimonial">
 				<div class="container">
 					<div class="row">
@@ -355,7 +335,7 @@
 									<span>Best Wishes</span>
 									<h2 style="color:#3d2505;font-family:AksaraJawa;display:block;font-size:32px;">
 										Ucapan dan Do'a</h2>
-									<div>
+									<div style="padding:0 15px">
 										<form method="POST" id="form-greeting" class="form-horizontal text-center">
 											<input type="text" name="Name" class="form-control" placeholder="Nama Kamu" id="nama_kamu" required>
 											<textarea name="Greeting" class="form-control" placeholder="Tulis Ucapan dan Doa" id="greating" required></textarea>

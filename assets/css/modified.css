@@ -67,7 +67,7 @@ body {
    }
 
    #fh5co-header2 {
-      background-image: url(../../photos/cover.png);
+      background-image: url(../../photos/cover.jpg);
       background-attachment: scroll;
       background-repeat: no-repeat;
       background-size: contain;
@@ -88,12 +88,13 @@ body {
    }
 
    #fh5co-header2 {
-      background-image: url(../../photos/cover1.png);
-      background-attachment: fixed;
+      background-image: url(../../photos/cover1.jpg);
+      /* background-attachment: fixed; */
       background-repeat: no-repeat;
-      background-size: auto;
-      background-position: top;
-      height: 790px;
+      background-size: cover;
+      background-position: center;
+      height: 95vh;
+      border-radius: 0.5rem;
    }
 
    .caseless {
