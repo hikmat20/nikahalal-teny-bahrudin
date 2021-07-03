@@ -12,7 +12,7 @@
 	<meta property="og:image" content="photos/cover2.jpg" />
 	<meta property="og:url" content="http://tenybahrudin.nikahalal.com" />
 	<meta property="og:site_name" content="15 Juli 2021" />
-	<meta property="og:description" content="The Wedding of Teny & Bahrudin" />
+	<meta property="og:description" content="15 Juli 2021" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
