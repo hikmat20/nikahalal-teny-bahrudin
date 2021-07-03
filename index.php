@@ -11,8 +11,8 @@
 	<meta property="og:title" content="The Wedding of Teny & Bahrudin" />
 	<meta property="og:image" content="photos/cover2.jpg" />
 	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="01 Januari 2022" />
-	<meta property="og:description" content="01 Januari 2022" />
+	<meta property="og:site_name" content="15 Juli 2021" />
+	<meta property="og:description" content="The Wedding of Teny & Bahrudin" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
@@ -70,16 +70,19 @@
 						<span style="color:white;font-family: AksaraJawa;display:block;font-size:40px;margin-bottom:0px;letter-spacing:-1px;">
 							Teny & Bahrudin
 						</span>
-						<div style="color:#3d2505;font-family: Lora, serif;margin-top:30px;">
-							<span style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
-								Dear Mr/Mrs/Ms
-							</span>
 
-							<p style="color: #ffffff; font-size:25px; font-weight:bold; padding-bottom:0px; border-radius:0px; text-align: center" id="write"><?= @$_GET['to'] ?></p>
-							<p style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
-								You are invited to our wedding
-							</p>
-						</div>
+						<?php if (@$_GET['to'] != '') : ?>
+							<div style="color:#3d2505;font-family: Lora, serif;margin-top:30px;">
+								<span style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
+									Dear Mr/Mrs/Ms
+								</span>
+
+								<p style="color: #ffffff; font-size:25px; font-weight:bold; padding-bottom:0px; border-radius:0px; text-align: center" id="write"><?= @$_GET['to']; ?></p>
+								<p style="color:white;font-family: Montserrat, sans-serif;display:block;font-size:14px;margin-bottom:0px;letter-spacing:2px;">
+									You are invited to our wedding
+								</p>
+							</div>
+						<?php endif; ?>
 						<button type="button" class="btn" data-dismiss="modal" onclick="playAudio()" style="background-color:#3d2505;color:white;margin-top:0px;">❤ OPEN INVITATION</button>
 						<div style="color:white;font-family: Lora, serif;margin-top:50px;bottom:10px;"></div>
 					</div>
@@ -121,7 +124,7 @@
 								<br>
 								<p>
 									<a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NTc4YmtnZ2pqcnNkbm5ubjY5bDkyNzNyaWggbzRzZzNpbGd0aGpoOWdoY3B1NmR1ZGZmNHNAZw&tmsrc=o4sg3ilgthjh9ghcpu6dudff4s%40group.calendar.google.com" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">Save
-										thedate</a>
+										the date</a>
 								</p>
 								<br>
 								<br>
