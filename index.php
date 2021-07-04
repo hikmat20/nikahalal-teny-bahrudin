@@ -328,10 +328,10 @@
 						<h2 style="color:white;font-family:AksaraJawa;display:block;font-size:32px;">
 							Lokasi Unduh Mantu</h2>
 						<div class="text-center">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2219.022450115668!2d112.2045997555734!3d-7.6994244825892935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDEnNTguMiJTIDExMsKwMTInMjAuMyJF!5e0!3m2!1sid!2sid!4v1625245744920!5m2!1sid!2sid" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662.3860098479931!2d112.20519293510704!3d-7.700076149672271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDInMDAuMCJTIDExMsKwMTInMTkuMSJF!5e0!3m2!1sid!2sid!4v1625372937771!5m2!1sid!2sid" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
 						<div class="text-center" style="padding-top: 50px;">
-							<a href="https://maps.app.goo.gl/tvbSunSgb5WXAGNNA" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
+							<a href="https://maps.app.goo.gl/6FMdAVjD4TxfBQ237" class="btn btn-default btn-sm" style="color:#3d2505;" target="blank">BUKA PETA</a>
 						</div>
 					</div>
 				</div>
