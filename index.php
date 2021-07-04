@@ -11,7 +11,7 @@
 	<meta property="og:title" content="The Wedding of Teny & Bahrudin" />
 	<meta property="og:image" content="photos/cover2.jpg" />
 	<meta property="og:url" content="http://tenybahrudin.nikahalal.com" />
-	<meta property="og:site_name" content="The Wedding of Teny & Bahrudin" />
+	<meta property="og:site_name" content="15 Juli 2021 -- The Wedding of Teny & Bahrudin" />
 	<meta property="og:description" content="15 Juli 2021" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
@@ -57,7 +57,6 @@
 
 	<a onclick="playAudio()" type="button" id="un-mute" class="float"><img src="images/mute.png" width="30px;"></a>
 	<a onclick="pauseAudio()" type="button" id="mute" class="float"><img src="images/nomute.png" width="30px;"></a>
-
 
 	<div class="modal fade right" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true" style="overflow: hidden;" data-backdrop="static" data-keyboard="false">
 		<div class="modal-dialog-full-width modal-dialog momodel modal-fluid" role="document">
