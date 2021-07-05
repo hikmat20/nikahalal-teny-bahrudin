@@ -276,7 +276,7 @@
 										</div>
 										<p>
 											<label style="font-weight:normal; font-size:20px;">Kediaman Mempelai Pria</label>
-											<br><span style="color:#ffffff;">Jl. Karangasem, Sumbersari, Badas, Kec. Badas, Kediri, Jawa Timur</span>
+											<br><span style="color:#ffffff;">Jl. Kunjang Badas, Desa Balongrejo, Kec. Badas, Kediri, Jawa Timur</span>
 										</p>
 									</div>
 								</div>
